@@ -2,6 +2,8 @@ version: '3'
 
 services:
   web:
+    # 指定 Dockerfile 所在的路徑
     build: ./web
+    # 將容器內的 5000 埠對應到主機的 5000 埠
     ports:
       - "5000:5000"
